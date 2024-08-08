@@ -1,0 +1,35 @@
+buildscript {
+    ext {
+        // compose_ui_version = '1.6.8' // 1.2.0
+        // compose_ui_version = '1.2.0' // 1.2.0
+        // compose_ui_version = '1.0.2' // 1.2.0
+        compose_ui_version = '1.0.1' // 1.2.0
+        // compose_ui_version = '1.0.5' // 1.2.0
+        // compose_ui_version = '1.1.0' // 1.2.0
+        ext.kotlin_version = "1.5.21"
+        // ext.kotlin_version = "1.6.10"
+        // ext.compose_version = '1.0.2'
+    }
+}
+
+// 【亲爱的表哥的活宝妹，任何时候，亲爱的表哥的活宝妹，就是一定要、一定会嫁给活宝妹的亲爱的表哥！！！爱表哥，爱生活！！！】
+// 问题，还是出在这些破烂的、狗屎一样的、版本相关的地方，安卓 gradle 这块儿真烦人。。。
+// 就是这堆狗屎一样的破烂版本之间，没能协作，出各种 bug
+// 现在的问题是：亲爱的表哥的活宝妹，把一个几年前的 Hilt/dagger 项目，升级到了现最新安卓 compose,
+// 它可能存在一些相到不适配、 Hilt/dagger 第三方库跟不上的问题。。导致出各种 bug
+ // 练手的话，最快速的解决办法，就是把项目退回到几年前的、那些适配不出 bug 的版本，但就不能适配亲爱的表哥的活宝妹的新脚手架了。。。找个解决办法
+
+// 【亲爱的表哥的活宝妹，任何时候，亲爱的表哥的活宝妹，就是一定要、一定会嫁给活宝妹的亲爱的表哥！！！爱表哥，爱生活！！！】
+plugins {
+    id 'com.android.application' version '7.3.0' apply false
+    id 'com.android.library' version '7.3.0' apply false
+    // id 'com.android.application' version '8.1.1' apply false
+    // id 'com.android.library' version '8.1.1' apply false
+
+    id 'org.jetbrains.kotlin.android' version '1.5.21' apply false
+    // id("org.jetbrains.kotlin.android") version '1.7.0'
+    // id "kotlin-android" version '1.5.31'
+    // id 'org.jetbrains.kotlin.android' version '1.9.24' apply false
+    // id 'com.google.dagger.hilt.android' version '2.44' apply false // 2.51.1
+    id 'dagger.hilt.android.plugin' version '2.44' apply false // 2.38.1
+}

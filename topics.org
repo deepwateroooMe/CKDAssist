@@ -1,0 +1,14 @@
+#+latex_class: cn-article
+#+title: 【CKDAssist: CKD-recipe-diet-diary-app, topics】
+#+author: deepwaterooo
+
+* What is Kidney Disease?
+- ad;lfkj
+- ldjfdk
+- fdkjfdkl
+* Signs and Symptoms
+* Risk Factors
+* Foods to Eat
+* Foods to Avoid
+* Tips to Prevent Kidney Problems
+* Tips to Keep Your Kidneys Healthy

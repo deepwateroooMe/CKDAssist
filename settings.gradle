@@ -1,0 +1,52 @@
+pluginManagement {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        gradlePluginPortal()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    // 【亲爱的表哥的活宝妹，任何时候，亲爱的表哥的活宝妹，就是一定要、一定会嫁给活宝妹的亲爱的表哥！！！爱表哥，爱生活！！！】
+    plugins {
+        id 'com.android.application' version '7.3.0' apply false
+        id 'com.android.library' version '7.3.0' apply false
+        // id 'com.android.application' version '8.1.1' apply false
+        // id 'com.android.library' version '8.1.1' apply false
+
+        // id 'org.jetbrains.kotlin.android' version '1.8.20-RC' apply false
+        id 'org.jetbrains.kotlin.android' version '1.5.21' apply false
+        // id 'kotlin-android' version '1.5.31' apply false
+
+        // id 'com.google.dagger.hilt.android' version '2.38.1' apply false
+        id 'dagger.hilt.android.plugin' version '2.44' apply false // 2.38.1
+        // // id 'com.google.dagger.hilt.android' version '2.51.1' apply false
+    }
+    resolutionStrategy {
+        eachPlugin {
+            if (requested.id.id == 'dagger.hilt.android.plugin') {
+                // useModule("com.google.dagger:hilt-android-gradle-plugin:2.51.1")
+                useModule("com.google.dagger:hilt-android-gradle-plugin:2.44")
+            } else if (requested.id.id == 'kotlin-android') {
+                useModule("org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.31")
+            }
+        }
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        gradlePluginPortal()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+}
+
+rootProject.name = "CKDAssist"
+include ':app'
